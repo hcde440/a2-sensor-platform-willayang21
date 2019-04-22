@@ -112,7 +112,8 @@ void loop() {
     
 }
 
-void getHumidity(String city) { // this method gets the wind speed in the given city from the weather API 
+// gets the humidity in the given city from the weather API 
+void getHumidity(String city) { 
   HTTPClient theClient; // initializes browser
   String url = "http://api.openweathermap.org/data/2.5/weather?q=" + city 
   + "&units=imperial&appid=" + weatherKey; 
